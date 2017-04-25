@@ -1,12 +1,13 @@
 import pyautogui, time, sys, os
 
-Error = open ("IFMS\Error.txt","w")
-Success= open("IFMS\Success.txt","w")
+Error = open("Error.txt","w")
+Success= open("Success.txt","w")
 Asset =[]
 Room = {}
 EquipmentField =();
 RoomField =();
 SortField = ();
+counter=0;
 
 print("Welcome to my automatic IFMS updater")
 print("Included should be 2 CSV files: A Location file and an Asset file")
@@ -40,7 +41,7 @@ else:
     sys.exit()
 
 print("DO NOT TOUCH THE KEYBOARD OR MOUSE WHILE PROGRAM IS RUNNING")
-time.sleep(1)
+
 
 for i, Code in enumerate(Asset):
     try:
@@ -52,11 +53,9 @@ for i, Code in enumerate(Asset):
         pyautogui.hotkey('ctrl','a')
         pyautogui.typewrite(Code[0][0])
         pyautogui.typewrite(['enter'])
-        time.sleep(0.1)
-
-
+        time.sleep(0.15)
         im =pyautogui.screenshot()
-        if(not pyautogui.pixelMatchesColor(RoomField[0],RoomField[1],(234,241,246))):
+        if(not pyautogui.pixelMatchesColor(EquipmentField[0],EquipmentField[1]+100,(234,241,246))):
             if(RoomField==()):
                 location = pyautogui.locateOnScreen('Room.PNG')
                 center = pyautogui.center(location)
@@ -70,6 +69,7 @@ for i, Code in enumerate(Asset):
             time.sleep(0.2)
             pyautogui.typewrite(['enter'])
             Success.write('{} {} {} {} {}{}'.format(Code[0][0],'was updated for',Room[Code[1][0]],'at',Code[1][0],'\n'))
+            counter+=1
         else:
             print(Code[0][0], "Was not updated")
             Error.write('{} {}'.format(Code[0][0],'was not updated!!!\n'))
@@ -99,3 +99,5 @@ for i, Code in enumerate(Asset):
             sys.exit()
     except Exception as e:
         print ("other error: ", str(e))
+
+Success.write('{} {}'.format(counter, "assets updated successfully"))
