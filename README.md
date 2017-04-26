@@ -10,5 +10,9 @@ Then  run the 'Run.bat' file.
 It'll then ask you for the directory of the Loaation and Item file. Just input the location of the file, should just be: 'Location.csv' and 'Items.csv'.
 Then let the script run.
 
+Note: There are 2 ways to stop the script.
+  1. Move the mouse cursor to the TOP LEFT of the screen <Recommended method
+  2. Click the command prompt and press CONTROL + C very quickly.
+
 Currently, this script only supports updating an assets sort field and location. ALthough, this should be enough for what we currently need to do.
 If you require more functionality, please email me at akpai@edu.uwaterloo.ca
