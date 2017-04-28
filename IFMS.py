@@ -55,7 +55,7 @@ for i, Code in enumerate(Asset):
         pyautogui.typewrite(['enter'])
         time.sleep(0.15)
         im =pyautogui.screenshot()
-        if(not pyautogui.pixelMatchesColor(EquipmentField[0],EquipmentField[1]+100,(234,241,246))):
+        if(not pyautogui.pixelMatchesColor(EquipmentField[0],EquipmentField[1],(234,241,246))):
             if(RoomField==()):
                 location = pyautogui.locateOnScreen('Room.PNG')
                 center = pyautogui.center(location)
