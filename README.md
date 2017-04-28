@@ -2,6 +2,8 @@ Since IFMS does not have a way to allow an user to automatically update assets, 
 As a custodian, when you have lots of assets to update, it is a painstaking task to have to manually update each asset.
 This script will take input in from the CSV files you specify. Then, by using pyautogui, look for and automatically click the correct fields to update them.
 
+**Update the 'Items.csv' file with the *Asset number* and *Location* you wish to update**
+
 TO USE THIS SCRIPT:
   1. Download the 'IFMS.zip' file from the github.
   2. Open IFMS and log in.
