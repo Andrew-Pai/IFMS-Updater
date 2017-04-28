@@ -3,12 +3,11 @@ As a custodian, when you have lots of assets to update, it is a painstaking task
 This script will take input in from the CSV files you specify. Then, by using pyautogui, look for and automatically click the correct fields to update them.
 
 TO USE THIS SCRIPT:
-First download the 'IFMS.zip' file from the github.
-Open IFMS and log in.
-Navigate to the update items page.
-Then  run the 'Run.bat' file.
-It'll then ask you for the directory of the Location and Item file. Just input the name of the file, should just be: 'Location.csv' and 'Items.csv'.
-Then let the script run.
+  1. Download the 'IFMS.zip' file from the github.
+  2. Open IFMS and log in.
+  3. Navigate to the update items page.
+  4. Run the 'Run.bat' file.
+  5. Let the script run.
 
 Note: There are 2 ways to stop the script.
   1. Move the mouse cursor to the TOP LEFT of the screen <Recommended method
