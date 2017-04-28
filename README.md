@@ -7,7 +7,7 @@ First download the 'IFMS.zip' file from the github.
 Open IFMS and log in.
 Navigate to the update items page.
 Then  run the 'Run.bat' file.
-It'll then ask you for the directory of the Loaation and Item file. Just input the location of the file, should just be: 'Location.csv' and 'Items.csv'.
+It'll then ask you for the directory of the Location and Item file. Just input the name of the file, should just be: 'Location.csv' and 'Items.csv'.
 Then let the script run.
 
 Note: There are 2 ways to stop the script.
