@@ -15,7 +15,8 @@ print("The location file should have the location of the user(2D-100) in column 
 print("The asset file should have the asset number(AV01963) in column 1 and location of the asset(2D-100) in column 2")
 print("\nPlease open IFMS and navigate to the Update Item page")
 
-user_input = input("\nWhat is the directory of the Location file?:")
+#user_input = input("\nWhat is the directory of the Location file?:")
+user_input = "Location.csv"
 if(os.path.isfile(user_input)):
     Location = open(user_input,"r")
     Location.readline()
@@ -27,7 +28,8 @@ else:
     print("File not found")
     sys.exit()
 
-user_input = input("\nWhat is the directory of the Asset file?:")
+#user_input = input("\nWhat is the directory of the Asset file?:")
+user_input="Items.csv"
 if(os.path.isfile(user_input)):
     Item = open(user_input,"r")
     Item.readline()
