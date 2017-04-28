@@ -7,7 +7,7 @@ This script will take input in from the CSV files you specify. Then, by using py
 TO USE THIS SCRIPT:
   1. Download the 'IFMS.zip' file from the github.
   2. Open IFMS and log in.
-  3. Navigate to the update items page.
+  3. Navigate to the update items page (ZIEW).
   4. Run the 'Run.bat' file.
   5. Let the script run.
 
